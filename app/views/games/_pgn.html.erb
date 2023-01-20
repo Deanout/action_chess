@@ -1,0 +1,6 @@
+<%= turbo_frame_tag dom_id(game, "pgn") do %>
+  <h1>PGN</h1>
+  <div>
+    <pre class="pgn" id="<%= dom_id(game, "pre_pgn") %>"><%= game.pgn %></pre>
+  </div>
+<% end %>

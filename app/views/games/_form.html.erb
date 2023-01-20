@@ -1,0 +1,18 @@
+
+<%= simple_form_for(@game) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :state %>
+    <%= f.input :turn %>
+    <%= f.input :fen %>
+    <%= f.input :pgn %>
+    <%= f.input :white_player_id %>
+    <%= f.input :black_player_id %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

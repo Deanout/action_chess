@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  state: MyString
+  turn: MyString
+  fen: MyString
+  pgn: MyString
+  white_player_id: 1
+  black_player_id: 1
+
+two:
+  state: MyString
+  turn: MyString
+  fen: MyString
+  pgn: MyString
+  white_player_id: 1
+  black_player_id: 1

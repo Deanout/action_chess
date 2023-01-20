@@ -1,0 +1,8 @@
+<% @users.each do |user| %>
+  <% games = current_user.game_in_progress_with(user) %>
+  <p>You are playing with <%= user.email %> <%= games.count %> games</p>
+  <% games.each do |game| %>
+    <%= link_to "Continue Game", game_path(game) %>
+  <% end %>
+  <%= render partial: "games/challenge_button", locals: { user: user }%>
+<% end %>
